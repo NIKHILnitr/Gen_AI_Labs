@@ -1,24 +1,57 @@
 # E-Commerce Assistant Chatbot
 
-This repository contains a full-stack chatbot solution for an e-commerce assistant, built with FastAPI microservices and a Streamlit frontend. The chatbot can answer user queries about products and order history, using retrieval-augmented generation (RAG) with product data.
+# 🛍️ E-commerce Assistant Chatbot
 
-## Project Structure
+This project is a modular e-commerce assistant chatbot built using microservices and powered by Hugging Face. It supports product search, order lookup, and general chatbot interaction through a simple Streamlit-based frontend.
 
-- **product_service/**: FastAPI service for searching products. Uses a sentence-transformer model to perform semantic search on product descriptions.
-- **order_service/**: FastAPI service for retrieving order data. Wraps a mock API around provided order history CSV.
-- **chat_service/**: 
-- **frontend/**: Streamlit app that provides a chat interface to interact with the assistant.
+---
 
-## Setup Instructions
+## 🚀 Features
 
-### Prerequisites
+### ✅ Microservices
+- **Product Service** (`localhost:8001`)  
+  Search products with filters like category, price, and ratings.
 
-- (Optional) An OpenAI API key for GPT-3.5 Turbo. If not available, the chat responses will be placeholders.
+- **Order Service** (`localhost:8002`)  
+  Fetch order details using Customer ID.
 
-### Running with Docker Compose
+- **Chat Service** (`localhost:8003`)  
+  General chatbot powered by Hugging Face Transformers.
 
-1. Clone the repository and navigate to its directory.
-2. Place the provided CSV datasets (`Product_Information_Dataset.csv` and `Order_Data_Dataset.csv`) into the `product_service/` and `order_service/` directories respectively.
-3. Build and start all services:
-   ```bash
-   docker-compose up --build
+- **Frontend** (`localhost:8501`)  
+  Streamlit dashboard with tabs for Product Search, Order Lookup, and Chatbot.
+
+---
+
+
+
+![image](https://github.com/user-attachments/assets/79cf2561-cff6-41cf-aa69-788623c690e6)
+![image](https://github.com/user-attachments/assets/31d8ca7a-8a4b-4035-bf42-0a317f4bbeda)
+![image](https://github.com/user-attachments/assets/b8384b68-59a2-465a-a38e-e2b882afec49)
+![image](https://github.com/user-attachments/assets/55382b5c-809f-456e-beb5-e560d13905d0)
+![image](https://github.com/user-attachments/assets/01995433-16ea-4aff-bd9e-127635ee29c1)
+
+
+![image](https://github.com/user-attachments/assets/9f20b8a1-9920-41d0-89e7-38ca54b6423b)
+![image](https://github.com/user-attachments/assets/b0b351b7-c35c-4901-a134-2de76e38770f)
+![image](https://github.com/user-attachments/assets/2c2a68d9-6d15-4408-bec2-5dfc58653270)
+
+
+
+
+##✅ Deliverables
+Modular microservices
+RESTful APIs with OpenAPI docs
+Streamlit frontend with 3 functional tabs
+General-purpose chatbot using Hugging Face
+
+Git commit history and versioning
+
+📄 License
+This project is for demonstration and educational purposes only
+Data used is sourced from open datasets on Kaggle and UCI
+
+ Acknowledgments
+Hugging Face Transformers
+Streamlit
+FastAPI
