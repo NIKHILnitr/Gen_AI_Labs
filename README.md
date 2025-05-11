@@ -39,19 +39,3 @@ This project is a modular e-commerce assistant chatbot built using microservices
 
 
 
-##✅ Deliverables
-Modular microservices
-RESTful APIs with OpenAPI docs
-Streamlit frontend with 3 functional tabs
-General-purpose chatbot using Hugging Face
-
-Git commit history and versioning
-
-📄 License
-This project is for demonstration and educational purposes only
-Data used is sourced from open datasets on Kaggle and UCI
-
- Acknowledgments
-Hugging Face Transformers
-Streamlit
-FastAPI
